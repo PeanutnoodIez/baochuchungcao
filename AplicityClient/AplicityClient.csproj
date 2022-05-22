@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>AplicityClient</AssemblyName>
+    <StartupObject>AplicityClient.App</StartupObject>
+    <ApplicationIcon>aplicity.ico</ApplicationIcon>
+    <Platforms>x64</Platforms>
+    <Authors>Aplicity Developers</Authors>
+    <PackageProjectUrl>https://github.com/PeanutnoodIez</PackageProjectUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <RepositoryUrl>https://github.com/horionclient/Injector</RepositoryUrl>
+    <Description>Minecraft: Bedrock Edition utility client</Description>
+    <SignAssembly>false</SignAssembly>
+    <Version>1.1.2</Version>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Copyright>©2021</Copyright>
+    <PackageId>AplicityClient</PackageId>
+    <Product>Aplicity Client</Product>
+    <PackageIcon></PackageIcon>
+    <PackageIconUrl />
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="console.png" />
+    <None Remove="aplicity-logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="console.png" />
+    <Resource Include="aplicity-logo.png" />
+  </ItemGroup>
+
+</Project>
